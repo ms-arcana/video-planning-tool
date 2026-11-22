@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Planning Research Tool</title>
+<meta name="description" content="A personal research tool used by an individual creator to plan original videos.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="site"><a href="./">Video Planning Research Tool</a></p>
+  <nav><a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Use</a><a href="#ja">日本語</a></nav>
+</header>
+<main>
+  <h1>Video Planning Research Tool</h1>
+  <p class="lead">A personal, command-line research tool that I (ms-arcana, an individual YouTube creator) use to plan original videos for my own YouTube channel.</p>
+
+  <h2>What it is</h2>
+  <ul>
+    <li>It runs locally on my own computer. There is no hosted interface, no sign-in, and no user accounts.</li>
+    <li>It is not offered to anyone else and generates no revenue. The videos I produce may earn ad revenue through the YouTube Partner Program; this tool and the data it uses are not monetized.</li>
+  </ul>
+
+  <h2>What it does</h2>
+  <p>The tool uses YouTube API Services (YouTube Data API v3: <code>search.list</code>, <code>videos.list</code>, <code>channels.list</code>, <code>playlistItems.list</code>, <code>commentThreads.list</code>) to read publicly available video and channel metadata and statistics. From these, it computes aggregate benchmarks, such as percentile ranges of view counts by video format, that help me decide which video ideas to try. The results are used only for my own planning and are never published or shared.</p>
+
+  <h2>How data is handled</h2>
+  <ul>
+    <li>Only public data is accessed. The tool does not access anyone's Google account.</li>
+    <li>Comment text is never stored. Commenter channel IDs are converted immediately into keyed hashes, and only aggregate counts are kept.</li>
+    <li>API data is kept for at most 30 days and is then refreshed or deleted.</li>
+  </ul>
+  <p>See the <a href="privacy/">Privacy Policy</a> and the <a href="terms/">Terms of Use</a>. By using this tool, users are agreeing to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:villagemountain37@gmail.com">villagemountain37@gmail.com</a></p>
+
+  <section lang="ja" id="ja">
+    <h2>日本語の概要</h2>
+    <p>個人の YouTube クリエイター ms-arcana が、自分のチャンネルのオリジナル動画を企画するために使う、個人用のコマンドラインの調査ツールです。自分のコンピューターで動かすもので、公開の画面・ログイン・ユーザーアカウントはありません。誰にも提供せず、このツールで収益は得ません（制作した動画は YouTube パートナープログラムで広告収益を得ることがありますが、このツールと、ツールが使うデータは収益化しません）。</p>
+    <p>YouTube API サービスで公開の動画・チャンネルの情報と統計を読み、再生数の分位点などの集計を作って、自分の企画の判断にだけ使います。結果は公開も共有もしません。コメント本文は保存せず、投稿者のチャンネル ID はすぐに鍵付きハッシュにし、集計だけを残します。API のデータは最長30日で取り直すか削除します。</p>
+    <p>詳しくは<a href="privacy/#ja">プライバシーポリシー</a>と<a href="terms/#ja">利用規約</a>をご覧ください。このツールを使うことで、利用者は <a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に拘束されることに同意したことになります。</p>
+  </section>
+</main>
+<footer>
+  <a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Use</a><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a><a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>
+</footer>
+</body>
+</html>
